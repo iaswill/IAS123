@@ -20,3 +20,19 @@ Ext.define('CustomApp', {
 
     }
 });
+
+
+Ext.create('Ext.Container', {
+     items: [{
+         xtype: 'rallygrid',
+         columnCfgs: [
+             'FormattedID',
+             'Name',
+             'Owner'
+         ],
+         storeConfig: {
+             model: 'userstory'
+         }
+     }],
+     renderTo: Ext.getBody()
+ });
