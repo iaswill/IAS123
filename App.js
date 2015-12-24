@@ -13,6 +13,7 @@ Ext.define('CustomApp', {
             listeners: {
                 load: function(store, data, success) {
                     console.log('Got Data!', store, data, success);//process data
+                    
                 }
             },
             fetch: ['Name', 'ScheduleState']
